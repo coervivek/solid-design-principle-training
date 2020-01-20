@@ -1,4 +1,4 @@
-package com.iris.solid.lsp.violation;
+package com.iris.solid.lsp.violation.vehicle;
 
 /**
  * Created by vivek.panday on 16-04-2016.

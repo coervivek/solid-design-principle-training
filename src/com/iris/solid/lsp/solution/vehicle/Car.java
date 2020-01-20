@@ -1,4 +1,4 @@
-package com.iris.solid.lsp.solution;
+package com.iris.solid.lsp.solution.vehicle;
 
 /**
  * Created by vivek.panday on 16-04-2016.
