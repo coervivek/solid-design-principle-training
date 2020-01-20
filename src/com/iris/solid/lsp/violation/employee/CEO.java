@@ -18,12 +18,12 @@ public class CEO extends Employee {
 
     @Override
     public void calculatePerHourRate(int rank) {
-        double baseAmount = 150;
+        var baseAmount = 150;
         setSalary(baseAmount * rank);
     }
 
     @Override
     public void assignManager(Employee manager) {
-        throw new IllegalStateException("The CEO has no manager...");
+        throw new UnsupportedOperationException("The CEO has no manager...");
     }
 }

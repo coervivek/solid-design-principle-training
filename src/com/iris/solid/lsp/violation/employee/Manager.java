@@ -14,7 +14,7 @@ public class Manager extends Employee {
 
     @Override
     public void calculatePerHourRate(int rank) {
-        double baseAmount = 19.75;
+        var baseAmount = 19.75;
         setSalary(baseAmount + (rank * 4));
     }
 }

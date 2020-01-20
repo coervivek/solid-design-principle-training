@@ -18,7 +18,7 @@ public class Employee {
     }
 
     public void calculatePerHourRate(int rank) {
-        double baseAmount = 12.50;
+        var baseAmount = 12.50;
         setSalary(baseAmount + (rank * 2));
     }
 

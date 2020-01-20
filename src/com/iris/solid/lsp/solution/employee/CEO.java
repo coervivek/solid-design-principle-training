@@ -2,15 +2,17 @@ package com.iris.solid.lsp.solution.employee;
 
 import com.iris.solid.common.Gender;
 
-public class CEO extends BaseEmployee implements IManager {
+public class CEO extends BaseEmployee implements IManager,ICEO {
 
+	
     public CEO(String firstName, String lastName, Gender gender) {
         super(firstName, lastName, gender);
     }
 
-    public void fireSomeone() {
-        System.out.println("You're Fired!");
-    }
+	// Should be in another interface
+	public void fireSomeone(IEmployee employee) {
+		System.out.println("You're Fired!" + employee.getFirstName() + " " + employee.getLastName());
+	}
 
     @Override
     public void generatePerformanceReview() {
@@ -22,4 +24,10 @@ public class CEO extends BaseEmployee implements IManager {
         double baseAmount = 150;
         setSalary(baseAmount * rank);
     }
+
+	@Override
+	public void giveBonus() {
+		// add bonus to organization
+		
+	}
 }

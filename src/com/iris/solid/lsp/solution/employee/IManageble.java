@@ -1,6 +1,6 @@
 package com.iris.solid.lsp.solution.employee;
 
-public interface IManaged extends IEmployee {
+public interface IManageble extends IEmployee {
 
     IEmployee getManager();
 
